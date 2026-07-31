@@ -10,18 +10,24 @@ const buttonTexts = [
     "Surprise Me 😍"
 ];
 const copyBtn = document.getElementById("copyBtn");
+const historyList = document.getElementById("historyList");
 
-// btn.addEventListener("click", () => {
-//     const letters = "0123456789ABCDEF";
-//     let color = "#";
+function addToHistory(color){
+    const box = document.createElement("div");
+    box.classList.add("color-box");
+    box.style.backgroundColor = color;
+    box.title = color;
+    box.addEventListener("click", ()=>{
+        document.body.style.backgroundColor = color;
+        colorCode.textContent = color;
+    });
+    historyList.prepend(box);
+    if(historyList.children.length>5){
+        historyList.removeChild(historyList.lastChild);
 
-//     for(let i=0; i<6; i++){
-//         color += letters[Math.floor(Math.random() * 16)];
-//     }
+    }
+}
 
-//     document.body.style.backgroundColor = color;
-//     colorCode.textContent = color;
-// });
 btn.addEventListener("click", () => {
 
     const color = randomColor();
@@ -29,6 +35,7 @@ btn.addEventListener("click", () => {
 
     document.body.style.backgroundColor = color;
     colorCode.textContent = color;
+    addToHistory(color);
 
     btn.style.backgroundColor = btnColor;
     btn.style.color = "white";
