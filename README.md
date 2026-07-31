@@ -2,7 +2,7 @@
 
 A simple Random Color Generator built using HTML, CSS, and JavaScript.
 
-** New History Feature Added **
+**New History Feature Added**
 
 ## ✨ Features
 
