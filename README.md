@@ -2,6 +2,8 @@
 
 A simple Random Color Generator built using HTML, CSS, and JavaScript.
 
+** New History Feature Added **
+
 ## ✨ Features
 
 - 🎲 Generate a random color instantly
