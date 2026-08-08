@@ -15,4 +15,5 @@ A simple Random Color Generator built using HTML, CSS, and JavaScript.
 - 🎯 Beginner-friendly JavaScript project
 
 
-## Live link :- https://chetan2209-code.github.io/random-Color-generator/
+## Live link :- 
+https://chetan2209-code.github.io/random-Color-generator/
